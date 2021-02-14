@@ -1,9 +1,4 @@
-
-
-<!doctype html>
-<html lang="en">
-
-<head>
+<html lang="en"><head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -559,16 +554,16 @@
     <title>Navbar1</title>
 </head>
 
-<body>
+<body cz-shortcut-listen="true" style="padding-top: 100px; left: 0px; transition: left 300ms ease 0s; overflow: visible;">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
                 <nav id="navbar" class="push better-nav fixed-top">
-                    <div class="container">
+                    <div class="container" style="max-width: 1140px;">
                         <div class="head">
                             <a href="#" class="brand">
                                 <div class="logo">
-                                    <img class="image" src="https://66.media.tumblr.com/avatar_2dcdc7cf5b47_64.png" data2x="https://66.media.tumblr.com/avatar_2dcdc7cf5b47_128.png" alt="Branding" />
+                                    <img class="image" src="https://66.media.tumblr.com/avatar_2dcdc7cf5b47_64.png" data2x="https://66.media.tumblr.com/avatar_2dcdc7cf5b47_128.png" alt="Branding">
                                 </div>
                                 <div class="title">
                                     <h3>Fixed</h3>
@@ -614,7 +609,7 @@
                                         <li><a href="#">RSS</a></li>
                                         <li class="search clearfix">
                                             <form>
-                                                <input type="text" placeholder="Search" />
+                                                <input type="text" placeholder="Search">
                                                 <button><i class="fa fa-search" aria-hidden="true"></i></button>
                                             </form>
                                         </li>
@@ -630,8 +625,54 @@
                     </div>
                 </nav>
                 <div id="underlay" class="better-nav-mobile-underlay"></div>
-                <nav id="navbar-slide" class="better-nav-pills"></nav>
-              
+                <nav id="navbar-slide" class="better-nav-pills" style="position: fixed; top: 0px; bottom: 0px; height: 100%; left: -80%; width: 80%; transition: left 300ms ease 0s;"><div class="body">
+                            <ul>
+                                <li class="home"><a href="#">Home</a></li>
+                                <li class="page"><a href="#">Portfolio</a></li>
+                                <li class="blog active dropdown"><a href="#">Blog</a>
+                                    <span class="selector"></span>
+                                    <ul>
+                                        <li><a href="#">Latest</a></li>
+                                        <li><a href="#">Popular</a></li>
+                                        <li class="dropdown"><a href="#">Categories</a>
+                                            <span class="selector"></span>
+                                            <ul>
+                                                <li><a href="#">HTML</a></li>
+                                                <li class="dropdown"><a href="#">CSS</a>
+                                                    <span class="selector"></span>
+                                                    <ul>
+                                                        <li><a href="#">Something really long like a sentence or something!?</a></li>
+                                                        <li><a href="#">CSS3</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#">JavaScript</a></li>
+                                                <li class="dropdown"><a href="#">Others</a>
+                                                    <span class="selector"></span>
+                                                    <ul>
+                                                        <li><a href="#">Bootstrap</a></li>
+                                                        <li><a href="#">JQuery</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="page"><a href="#">Contacts</a></li>
+                                <li class="more dropdown"><a href="#"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                    <span class="selector"></span>
+                                    <ul>
+                                        <li><a href="#">RSS</a></li>
+                                        <li class="search clearfix">
+                                            <form>
+                                                <input type="text" placeholder="Search">
+                                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div></nav>
+                
             </div>
         </div>
     </div>
@@ -710,6 +751,6 @@
             }
         });
     </script>
-</body>
 
-</html>
+
+</body></html>
